@@ -48,8 +48,8 @@ function Navbar() {
   };
 
   return (
-    <div className="bg-[#FFFEFE] shadow-lg py-2">
-      <nav className="page-container flex items-center justify-between">
+    <div className="bg-[#FFFEFE] shadow-lg py-2 fixed w-full">
+      <nav className="page-container flex items-center justify-between ">
         <div className="flex items-center">
           <FacebookIcon
             sx={{
@@ -92,11 +92,11 @@ function Navbar() {
             <NotificationsActiveIcon style={iconstyles.righticon} />
           </div>
           <Image
-            src="https://cdn.pixabay.com/photo/2021/07/03/20/06/woman-6384768_1280.jpg"
-            height={50}
-            width={50}
+            src="https://cdn.pixabay.com/photo/2017/12/17/08/12/girl-3023831_1280.jpg"
+            height={60}
+            width={60}
             alt="user"
-            className="rounded-[50%] object-contain"
+            className="rounded-[50%] object-cover"
           />
         </div>
       </nav>
