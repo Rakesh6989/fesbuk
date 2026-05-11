@@ -12,7 +12,7 @@ function SideMenu({ icon, text, onClick, active }: SideMenuProps) {
   return (
     <button
       onClick={onClick}
-      className={`w-full px-3 py-2 rounded-xl flex items-center gap-5 hover:bg-gray-200 transition ${
+      className={`w-full px-3 py-2 mb-2 cursor-pointer rounded-xl flex items-center gap-5 hover:bg-gray-200 transition ${
         active ? "bg-gray-300" : ""
       }`}
     >

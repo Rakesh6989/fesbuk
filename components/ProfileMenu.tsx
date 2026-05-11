@@ -1,12 +1,12 @@
 import Image from "next/image";
 interface ProfileMenuProps {
   image: string;
-  name: string;
+  name?: string;
 }
 
 function ProfileMenu({ image, name }: ProfileMenuProps) {
   return (
-    <div className="flex justify-start items-center gap-5 page-container py-5">
+    <div className="flex justify-start items-center gap-5 py-5">
       <Image
         src={image}
         height={60}
@@ -16,7 +16,7 @@ function ProfileMenu({ image, name }: ProfileMenuProps) {
         className="rounded-full object-cover"
       />
 
-      <button>{name ? name : "User Name"}</button>
+      <button>{name}</button>
     </div>
   );
 }

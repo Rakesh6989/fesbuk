@@ -96,7 +96,7 @@ function HeadSideMenu() {
     },
   ];
   return (
-    <div className="page-container">
+    <div>
       {menuData.map((val, ind) => {
         let icon = val.icon;
         const text = val.text;
