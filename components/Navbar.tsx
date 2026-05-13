@@ -76,7 +76,7 @@ function Navbar() {
               <input
                 type="text"
                 placeholder="Search fesbuk"
-                className="h-11 w-[290px] bg-[#f1f3f5] rounded-3xl pl-10 pr-4 outline-none"
+                className="h-11 w-72.5 bg-[#f1f3f5] rounded-3xl pl-10 pr-4 outline-none"
                 onChange={fesbukhandlechange}
                 value={data.fesbuksearch}
                 name="fesbuksearch"
