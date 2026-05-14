@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import Slider from "react-slick";
 
@@ -13,18 +14,38 @@ type SliderProps = {
   settings?: object;
   className?: string;
 };
+
+// NEXT ARROW
 function NextArrow(props: any) {
   const { onClick } = props;
 
   return (
     <button
       onClick={onClick}
-      className="absolute right-2 top-1/2 z-20 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-lg transition hover:bg-gray-100"
+      className="
+        absolute
+        right-2
+        top-1/2
+        z-20
+        flex
+        h-12
+        w-12
+        -translate-y-1/2
+        items-center
+        justify-center
+        rounded-full
+        bg-white
+        shadow-lg
+        transition
+        hover:bg-gray-100
+      "
     >
-      <ChevronRightIcon className="text-[32px]! text-gray-700!x`" />
+      <ChevronRightIcon className="!text-[34px] !text-gray-700" />
     </button>
   );
 }
+
+// PREV ARROW
 function PrevArrow(props: any) {
   const { onClick, currentSlide } = props;
 
@@ -33,9 +54,25 @@ function PrevArrow(props: any) {
   return (
     <button
       onClick={onClick}
-      className="absolute left-2 top-1/2 z-20 flex h-12 w-12 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-lg transition hover:bg-gray-100"
+      className="
+        absolute
+        left-2
+        top-1/2
+        z-20
+        flex
+        h-12
+        w-12
+        -translate-y-1/2
+        items-center
+        justify-center
+        rounded-full
+        bg-white
+        shadow-lg
+        transition
+        hover:bg-gray-100
+      "
     >
-      <ChevronLeftIcon className="text-[32px]! text-gray-700!" />
+      <ChevronLeftIcon className="!text-[34px] !text-gray-700" />
     </button>
   );
 }
@@ -44,9 +81,12 @@ function AppSlider({ children, settings, className }: SliderProps) {
   const defaultSettings = {
     dots: false,
     infinite: false,
-    speed: 300,
-    slidesToShow: 4,
+    speed: 400,
+
+    // FB style preview
+    slidesToShow: 4.3,
     slidesToScroll: 1,
+
     arrows: true,
 
     nextArrow: <NextArrow />,
@@ -56,19 +96,19 @@ function AppSlider({ children, settings, className }: SliderProps) {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 3.3,
         },
       },
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 2.3,
         },
       },
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1.3,
         },
       },
     ],
@@ -78,7 +118,7 @@ function AppSlider({ children, settings, className }: SliderProps) {
     <div className={`relative ${className}`}>
       <Slider {...defaultSettings} {...settings}>
         {React.Children.map(children, (child) => (
-          <div className="pr-2 py-3">{child}</div>
+          <div className="px-1 py-3">{child}</div>
         ))}
       </Slider>
     </div>
