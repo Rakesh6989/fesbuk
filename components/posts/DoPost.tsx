@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import ProfileMenu from "../components/ProfileMenu";
+import ProfileMenu from "../ProfileMenu";
 import VideocamIcon from "@mui/icons-material/Videocam";
 import ImageIcon from "@mui/icons-material/Image";
 import VideoCameraBackIcon from "@mui/icons-material/VideoCameraBack";

@@ -1,11 +1,12 @@
 "use client";
 import HeadSideMenu from "../components/HeadSideMenu";
 import ProfileMenu from "../components/ProfileMenu";
-import DoPost from "../components/DoPost";
+import DoPost from "../components/posts/DoPost";
 import AlertComp from "../components/AlertComp";
 import StoryCard from "../components/StoryCard";
 import AppSlider from "@/components/ui/AppSlider";
 import { storyData } from "@/data/stories";
+import PostRenderer from "../components/posts/PostRenderer";
 export default function Home() {
   return (
     <div className="page-container">
@@ -18,7 +19,7 @@ export default function Home() {
           <HeadSideMenu />
         </div>
 
-        <div>
+        <div className="flex flex-col overflow-y-auto">
           <DoPost />
           <AppSlider className="w-full max-w-160">
             {storyData.map((val) => (
@@ -31,6 +32,7 @@ export default function Home() {
               />
             ))}
           </AppSlider>
+          <PostRenderer />
         </div>
 
         <AlertComp />
