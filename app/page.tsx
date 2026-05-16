@@ -19,9 +19,9 @@ export default function Home() {
           <HeadSideMenu />
         </div>
 
-        <div className="flex flex-col overflow-y-auto">
+        <div className="flex flex-col overflow-y-auto w-full max-w-160">
           <DoPost />
-          <AppSlider className="w-full max-w-160">
+          <AppSlider className="">
             {storyData.map((val) => (
               <StoryCard
                 key={val.id}

@@ -118,7 +118,7 @@ function AppSlider({ children, settings, className }: SliderProps) {
     <div className={`relative ${className}`}>
       <Slider {...defaultSettings} {...settings}>
         {React.Children.map(children, (child) => (
-          <div className="px-1 py-3">{child}</div>
+          <div className=" py-3">{child}</div>
         ))}
       </Slider>
     </div>
