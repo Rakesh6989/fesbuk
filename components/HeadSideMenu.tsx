@@ -54,46 +54,46 @@ function HeadSideMenu() {
       icon: <EventIcon />,
       text: "Events",
     },
-    // {
-    //   icon: <CampaignIcon />,
-    //   text: "Ads Manager",
-    // },
-    // {
-    //   icon: <BarChartIcon />,
-    //   text: "Ads Center",
-    // },
-    // {
-    //   icon: <RedeemIcon />,
-    //   text: "Gaming",
-    // },
-    // {
-    //   icon: <CrisisAlertIcon />,
-    //   text: "Crisis Response",
-    // },
-    // {
-    //   icon: <MovieCreationIcon />,
-    //   text: "Reels",
-    // },
-    // {
-    //   icon: <QuickreplyIcon />,
-    //   text: "Messenger",
-    // },
-    // {
-    //   icon: <CreditCardIcon />,
-    //   text: "Orders & Payments",
-    // },
-    // {
-    //   icon: <FlagIcon />,
-    //   text: "Pages",
-    // },
-    // {
-    //   icon: <VideogameAssetIcon />,
-    //   text: "Play Games",
-    // },
-    // {
-    //   icon: <GradientIcon />,
-    //   text: "Meta AI",
-    // },
+    {
+      icon: <CampaignIcon />,
+      text: "Ads Manager",
+    },
+    {
+      icon: <BarChartIcon />,
+      text: "Ads Center",
+    },
+    {
+      icon: <RedeemIcon />,
+      text: "Gaming",
+    },
+    {
+      icon: <CrisisAlertIcon />,
+      text: "Crisis Response",
+    },
+    {
+      icon: <MovieCreationIcon />,
+      text: "Reels",
+    },
+    {
+      icon: <QuickreplyIcon />,
+      text: "Messenger",
+    },
+    {
+      icon: <CreditCardIcon />,
+      text: "Orders & Payments",
+    },
+    {
+      icon: <FlagIcon />,
+      text: "Pages",
+    },
+    {
+      icon: <VideogameAssetIcon />,
+      text: "Play Games",
+    },
+    {
+      icon: <GradientIcon />,
+      text: "Meta AI",
+    },
   ];
   return (
     <div>
